@@ -26,7 +26,7 @@ app:
 # Marketing
 #
 marketing_header: Ping Pong in Augmented Reality # Optional
-marketing_desc: Turn your phone into your own ping pong paddle, and take ping pong dribbling on-the-go. Compete with your friends on Game Center, and become a ping pong champion in your own right.
+marketing_desc: Turn your phone into your own ping pong paddle, and take ping pong dribbling on-the-go. Compete with your friends on Game Center, and become a ping pong champion in your own right.<p class="powered-by">Powered by ARKit on iOS 11</p>
 
 #
 # Social Links
