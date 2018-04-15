@@ -98,7 +98,7 @@ itunes_affiliate_token: # Optional
 # Localization
 baseurl: ""
 languages: ["en", "zh"]
-exclude_from_localizations: ["javascript", "scss", "css", images", "scripts", "favicon.ico"]
+exclude_from_localizations: ["javascript", "scss", "images", "css", "scripts", "favicon.ico"]
 
 plugins:
   - jekyll-multiple-languages-plugin

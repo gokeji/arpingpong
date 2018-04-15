@@ -5,7 +5,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>{% if site.title %}{{ site.title }}{% else %}{{ site.app.name }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
-  
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="apple-icon-precomposed.png">
@@ -21,7 +21,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="themes/default/styles.css">
+  <link rel="stylesheet" href={{ "/themes/default/styles.css" | prepend: site.baseurl_root }}>
 
   <meta property="og:title" content="Ping-Pong AR">
   <meta property="og:description" content="Ping Pong in Augmented Reality">
