@@ -83,7 +83,7 @@ description: Ping pong in Augmented Reality on iOS # Optional - Enter your site 
 #
 # Google Analytics
 #
-google_analytics: # Enter your tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-117422092-1 # Enter your tracking code (e.g. UA-2110908-2) to activate tracking
 
 #
 # iTunes Affiliate Program
@@ -94,6 +94,14 @@ google_analytics: # Enter your tracking code (e.g. UA-2110908-2) to activate tra
 # This will default to using the author's affiliate token if left blank
 #
 itunes_affiliate_token: # Optional
+
+# Localization
+baseurl: ""
+languages: ["en", "zh"]
+exclude_from_localizations: ["javascript", "images", "css"]
+
+plugins: 
+  - jekyll-multiple-languages-plugin
 
 #
 # !! You don't need to change any of the configuration flags below !!

@@ -50,6 +50,25 @@ a:hover {
 {% endif %}
 
 //
+// language-switcher
+//
+
+.language-switcher {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  z-index: 2;
+
+  span.active {
+    text-decoration: underline;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+//
 // LAYOUT / SECTIONS
 //
 

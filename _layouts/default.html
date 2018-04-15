@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="{{ site.lang }}">
 {% include head.html %}
   <body>
-
+	<!-- <script>
+	    var lang = navigator.language || navigator.userLanguage;
+	    if (lang.indexOf('zh') == 0)
+	        window.location = '/zh';
+	</script> -->
     {{ content }}
 
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>

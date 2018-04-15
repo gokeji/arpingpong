@@ -1,3 +1,20 @@
+<div class="language-switcher">
+  {% for lang in site.languages %}
+      {% if lang == site.lang %}
+        <span class="active">{% t langs.{{ lang }} %}</span>
+      {% elsif lang == site.default_lang %}
+        <a target="_self" href="{{ site.baseurl_root }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+      {% else %}
+        <a target="_self" href="{{ site.baseurl_root }}/{{ lang }}{{ page.url }}" >{% t langs.{{ lang }} %}</a>
+      {% endif %}
+
+      {% assign next = forloop.index | plus: 1 %}
+
+      {% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %}
+        <span class="separator"> &bull; </span>
+      {% endif %}
+  {% endfor %}
+</div>
 <div class="main" role="main">
   <div class="container">
 
@@ -15,7 +32,7 @@
                 {% if site.app.icon %} src="{{ site.app.icon }}"{% endif %}
               />
             {% endif %}
-            <span class="app-name">{{ site.app.name }}</span>
+            <span class="app-name">{% translate title %}</span>
           </div>
 
           {% if site.marketing_header %}
