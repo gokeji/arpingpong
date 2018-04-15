@@ -23,15 +23,15 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href={{ "/themes/default/styles.css" | prepend: site.baseurl_root }}>
 
-  <meta property="og:title" content="Ping-Pong AR">
-  <meta property="og:description" content="Ping Pong in Augmented Reality">
-  <meta property="og:site_name" content="Ping-Pong AR">
-  <meta property="og:url" content="http://arpingpong.org">
-  <meta property="og:image" content="http://arpingpong.org/images/paddleIcon1024.png">
+  <meta property="og:title" content="{% t title %}">
+  <meta property="og:description" content="{% t marketing_header %}">
+  <meta property="og:site_name" content="{% t title %}">
+  <meta property="og:url" content="{% t site.og.url %}">
+  <meta property="og:image" content="http://www.arpingpong.org/images/paddleIcon1024.png">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
-  <meta property="og:locale" content="en_US">
+  <meta property="og:locale" content="{% t site.og.locale %}">
   <meta property="og:type" content="website">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
