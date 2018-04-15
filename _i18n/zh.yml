@@ -1,4 +1,7 @@
 title: 乒乓球 AR
+description: iOS扩增现实中的乒乓球游戏
+marketing_header: AR托增现实中的乒乓球游戏
+marketing_desc: 把手机变成虚拟乒乓球拍，随时随地回顾童年时用球拍颠球的放空心情。在Game Center上与朋友比拼，成为一席颠球之王。<p class="powered-by">使用iOS 11的ARKit功能</p>
 langs:
   en: English
   zh: 中文

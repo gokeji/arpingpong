@@ -10,7 +10,7 @@
 
       {% assign next = forloop.index | plus: 1 %}
 
-      {% if forloop.last != true and site.languages[forloop.index] != site.lang or site.languages[forloop.index] == site.lang and next < forloop.length %}
+      {% if forloop.last != true %}
         <span class="separator"> &bull; </span>
       {% endif %}
   {% endfor %}
@@ -32,14 +32,12 @@
                 {% if site.app.icon %} src="{{ site.app.icon }}"{% endif %}
               />
             {% endif %}
-            <span class="app-name">{% translate title %}</span>
+            <span class="app-name">{% t title %}</span>
           </div>
 
-          {% if site.marketing_header %}
-          <h2 class="marketing-header">{{ site.marketing_header }}</h2>
-          {% endif %}
+          <h2 class="marketing-header">{% t marketing_header %}</h2>
 
-          <p class="marketing-desc">{{ site.marketing_desc }}</p>
+          <p class="marketing-desc">{% t marketing_desc %}</p>
           <div class="download-buttons">
             <a
               class="download-btn btn btn-lg"
